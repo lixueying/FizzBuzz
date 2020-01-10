@@ -40,4 +40,28 @@ public class FizzBuzzTest {
         //then
         assertEquals(actual,"Whizz");
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_number_is_multiple_of_3_and_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.formatFizzBuzz(15);
+
+        //then
+        assertEquals(actual,"FizzBuzz");
+    }
+
+    @Test
+    public void should_return_FizzBuzzWhizz_when_number_is_multiple_of_3_and_5_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.formatFizzBuzz(105);
+
+        //then
+        assertEquals(actual,"FizzBuzzWhizz");
+    }
 }
