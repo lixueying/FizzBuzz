@@ -4,7 +4,11 @@ class FizzBuzz {
 
     String formatFizzBuzz(int number) {
 
-        if(number % 3 == 0 & number % 5 == 0 & number % 7 == 0){
+        if (isContain3(number)) {
+            return "Fizz";
+        }
+
+        if (number % 3 == 0 & number % 5 == 0 & number % 7 == 0) {
             return "FizzBuzzWhizz";
         }
 
@@ -21,5 +25,9 @@ class FizzBuzz {
         }
 
         return "Fizz";
+    }
+
+    boolean isContain3(int number) {
+        return String.valueOf(number).contains("3");
     }
 }

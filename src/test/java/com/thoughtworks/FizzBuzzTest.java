@@ -64,4 +64,16 @@ public class FizzBuzzTest {
         //then
         assertEquals(actual,"FizzBuzzWhizz");
     }
+
+    @Test
+    public void should_return_Fizz_when_number_is_include_3() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.formatFizzBuzz(30);
+
+        //then
+        assertEquals(actual,"Fizz");
+    }
 }
