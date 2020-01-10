@@ -76,4 +76,16 @@ public class FizzBuzzTest {
         //then
         assertEquals(actual,"Fizz");
     }
+
+    @Test
+    public void should_return_BuzzWhizz_when_number_is_multiple_of_5_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.formatFizzBuzz(35);
+
+        //then
+        assertEquals(actual,"BuzzWhizz");
+    }
 }
