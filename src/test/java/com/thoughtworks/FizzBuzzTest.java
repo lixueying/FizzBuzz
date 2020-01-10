@@ -28,16 +28,16 @@ public class FizzBuzzTest {
         //then
         assertEquals(actual,"Buzz");
     }
-//
-//    @Test
-//    public void should_return_whizz_when_number_is_multiple_of_7() {
-//        //given
-//        FizzBuzz fizzBuzz = new FizzBuzz();
-//
-//        //when
-//        String actual = fizzBuzz.formatFizzBuzz(14);
-//
-//        //then
-//        assertEquals(actual,"Whizz");
-//    }
+
+    @Test
+    public void should_return_whizz_when_number_is_multiple_of_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.formatFizzBuzz(14);
+
+        //then
+        assertEquals(actual,"Whizz");
+    }
 }
