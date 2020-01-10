@@ -4,6 +4,10 @@ class FizzBuzz {
 
     String formatFizzBuzz(int number) {
 
+        if (number > 120) {
+            return String.valueOf(number);
+        }
+
         if (number % 3 == 0 & number % 5 == 0 & number % 7 == 0) {
             return "FizzBuzzWhizz";
         }
