@@ -8,24 +8,26 @@ class FizzBuzz {
             return "FizzBuzzWhizz";
         }
 
-        if (number % 5 == 0 & number % 7 == 0) {
-            return "BuzzWhizz";
-        }
+        if (!isContain7(number)) {
+            if (number % 5 == 0 & number % 7 == 0) {
+                return "BuzzWhizz";
+            }
 
-        if (isContain3(number)) {
-            return "Fizz";
-        }
+            if (isContain3(number)) {
+                return "Fizz";
+            }
 
-        if (number % 3 == 0 & number % 5 == 0) {
-            return "FizzBuzz";
-        }
+            if (number % 3 == 0 & number % 5 == 0) {
+                return "FizzBuzz";
+            }
 
-        if (number % 5 == 0) {
-            return "Buzz";
-        }
+            if (number % 5 == 0) {
+                return "Buzz";
+            }
 
-        if (number % 7 == 0) {
-            return "Whizz";
+            if (number % 7 == 0) {
+                return "Whizz";
+            }
         }
 
         return "Fizz";
@@ -33,5 +35,9 @@ class FizzBuzz {
 
     boolean isContain3(int number) {
         return String.valueOf(number).contains("3");
+    }
+
+    boolean isContain7(int number) {
+        return String.valueOf(number).contains("7");
     }
 }

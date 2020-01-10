@@ -88,4 +88,16 @@ public class FizzBuzzTest {
         //then
         assertEquals(actual,"BuzzWhizz");
     }
+
+    @Test
+    public void should_return_Fizz_when_number_is_include_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.formatFizzBuzz(75);
+
+        //then
+        assertEquals(actual,"Fizz");
+    }
 }
