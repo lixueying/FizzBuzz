@@ -78,6 +78,18 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_FizzWhizz_when_number_is_multiple_of_3_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        //when
+        String actual = fizzBuzz.formatFizzBuzz(21);
+
+        //then
+        assertEquals(actual,"FizzWhizz");
+    }
+
+    @Test
     public void should_return_Fizz_when_number_is_include_3() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
